@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт для лабораторных работ по ИСП">
+    <meta name="author" content="Гертер Александр">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratory work</title>
+    <link rel="icon" href="../assets/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/laba4.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <a href='../index.html'><img class='logo' src="../assets/images/logo.png"></a>
+            <div>
+                <h1>Гертер Александр ПИЭ-12 Вариант III</h1>
+                <nav>
+                <div class="hamburger-menu">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
+                    <ul class="nav-links">
+                        <li><a href="../pages/laba1.html"><h3>Лабораторная работа №1</h3></a></li>
+                        <li><a href="../pages/laba2.html"><h3>Лабораторная работа №2</h3></a></li>
+                        <li><a href="../pages/laba3.html"><h3>Лабораторная работа №3</h3></a></li>
+                        <li><a href="../pages/laba4.html"><h3>Лабораторная работа №4</h3></a></li>
+                        <li><a href="#"><h3>Лабораторная работа №5</h3></a></li>
+                        <li><a href="#"><h3>Лабораторная работа №6</h3></a></li>
+                        <li><a href="#"><h3>Лабораторная работа №7</h3></a></li>
+                        <li><a href="#"><h3>Лабораторная работа №8</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container2">
+                <h2 class='result'>Задание 1. Дано целое число  N  и набор из N  вещественных  чисел.  Вывести сумму и произведение четных чисел из данного набора.</h2>
+                <button class="but" onclick="sum_and_product_of_evens();">Решить 1 задачу</button>
+                <input type="text" id="N" name="number_N" placeholder="Введите число N">
+                <div class='result' id="result"></div>
+            </div>
+            <div class="container2">
+                <h2 class='result'>Задание 2. Даны два целых числа A и B (A < B). Вывести в порядке убывания все квадраты целых чисел, расположенных  между A и B (включая числа A и B), а также количество N этих чисел.</h2>
+                <button class="but" onclick="print_squares_and_count();">Решить 2 задачу</button>
+                <input type="text" id="A" name="A" placeholder="Введите число A">
+                <input type="text" id="B" name="B" placeholder="Введите число B">
+                <div class='result' id="result1"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Все права защищены</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+/* align-items —  выравнивает содержимое контейнера вдоль поперечной оси */
+/* flex-direction позволяет указать направление, в соответствии с которым располагаются флекс элементы внутри флекс контейнера */
+/* justify-content выравнивает элементы, когда они не используют все доступное пространство по горизонтали */
+/* padding —  устанавливает значение полей вокруг содержимого элемента */
+/* display — определяет тип отображения элемента на странице */
+/* list-style — позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка */
+/* flex-wrap —  определяет, будут ли flex-элементы переноситься на другую строку, если им не хватит места в ряду */
+
+/* body */
+body{
+    background-image:url('../images/fon.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+    /* header */
+.container1{
+    display: flex;
+    align-items: center; 
+    border: 3px solid black;
+    justify-content: space-between;
+    padding:2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    border-radius: 24px;
+    background-image:url('../images/div.jpg');
+}
+.container1 h1 {
+    
+    padding: 0 20px;
+}
+.logo{
+    width:70%;
+    height:70%; 
+    border: 3px solid black;
+    border-radius: 24px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+}
+.hamburger-menu {
+    display: none;
+}
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+    /* main */
+main {
+    flex: 1;
+}
+.container{
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    border-radius: 24px;
+    background-image:url('../images/div.jpg');
+    justify-content: space-evenly;
+}
+.strings{
+    display: flex;
+    padding: 1%;
+    justify-content: space-evenly;
+} 
+.item {
+    border-radius: 24px;
+    background-color: lightblue;
+    border: 1px solid #000;
+    width:30%;
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid black;
+    padding: 9% 0;
+}
+.but{
+    color:white;
+    background-image:url('../images/div.jpg');
+    width:20%;
+    height:30%;
+    border-radius: 24px;
+}
+.result{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+}
+.container2{
+    text-align: center;
+}
+.task{
+    width: 40%;
+    height: 25%;
+    border-radius: 24px;
+}
+    /* footer */
+footer{
+    width: 100%;
+    color: #ffffff;
+    background-color: #02054c;
+    margin-top: 20px;
+    text-align: center;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+h1{
+    color:white;
+    text-align: center;
+} 
+h3{
+    font-size: 16px;
+    color: white;
+}
+h2{
+    font-size: 20px;
+}
+
+@media (max-width:750px) {
+    .hamburger-menu {
+        display: block;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-links.show-menu {
+        display: flex;
+    }
+    .container1{
+        margin: 0;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .strings{
+        flex-direction: column;
+        padding: 0;
+    }
+    .item{
+        width: 90%;
+        margin: 2px 5%;
+        border: 2px solid black;
+    }
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .but{
+        margin: 10px 0;
+        padding: 5px;
+    }
+    input{
+        display: block;
+        margin: 0 21%;
+        height: 30px;
+    }
+    .but{
+        width: 50%;
+        padding: 10px 0;
+    }
+    .task{
+        width: 90%;
+    }
+    .container2{
+        padding-bottom: 10px;
+    }
+    .result{
+        text-align: left;
+        padding: 10px;
+    }
+}
