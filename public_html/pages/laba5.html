@@ -7,8 +7,9 @@
     <title>Laboratory work</title>
     <link rel="icon" href="../assets/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style_game.css">
+    <script src="../assets/js/game.js"></script>
     <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/laba2.js"></script>
 </head>
 <body>
     <header>
@@ -37,24 +38,26 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="container2">
-                <h2 class='result'>Задание 1. Даны стороны прямоугольника a и b. Найти его площадь S = a·b и периметр P = 2·(a + b).</h2>
-                <button class="but" onclick="values();">Решить 1 задачу</button>
-                <input type="text" id="a" name="side_a" placeholder="Введите сторону A">>
-                <input type="text" id="b" name="side_b" placeholder="Введите сторону B">
-                <div class='result' id="result"></div>
+        <div class="game_area">
+            <div class="c" id="narrative">
+                <img  class="kart" src="../assets/images/game_images/start.jpg">
+                <p class="textes">
+                    Рагнарёк Души - Это история о викинге Рагнаре, закаленном в боях воине, он прошел через множество сражений и набегов.
+                    Однажды, во время очередного грабежа католической церкви, по воле случая он знакомится с монахом по имени Этельстан.
+                </p>
             </div>
-            <div class="container2">
-                <h2 class='result'>Задание 2. Дан размер файла в байтах. Используя операцию деления нацело, найти количество полных килобайтов, которые занимает данный файл (1 килобайт = 1024 байта).</h2>
-                <button class="but" onclick="kilobytes();">Решить 2 задачу</button>
-                <input type="text" id="byte" name="bytes" placeholder="Введите количество байт">
-                <div class='result' id="result1"></div>
+            <div id="next" class="">
+                <button id="button" onclick="startGame()">Начать историю</button>
+            </div>
+            <div id="consequence" class="textes"></div>
+  
+            <div id="nextButtonContainer" class="">
+                <button id="nextButton" onclick="displayStory()" display:none>Далее</button>
             </div>
         </div>
     </main>
     <footer>
-        <p>Все права защищены</p>
+        <p> Все права защищены</p>
     </footer>
 </body>
 

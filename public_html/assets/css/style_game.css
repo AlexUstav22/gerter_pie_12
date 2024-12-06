@@ -1,0 +1,43 @@
+.game_area{
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    border-radius: 24px;
+    background-image:url('../images/div.jpg');
+}
+.textes{
+    color:white;
+    font-size: 20px;
+    margin: 20px 30px;
+}
+.kart{
+    width:40%;
+    height:30%;
+    margin: 20px 30% 0 30%;
+    
+}
+#nextButtonContainer {
+    display: none;
+}
+
+button{
+    margin: 20px 25px;
+    padding: 10px 10px;
+}
+
+@media (max-width:750px) {
+    .game_area{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .kart{
+        width:60%;
+        margin: 20px 20% 0;
+    }
+    .textes{
+        font-size: 15px;
+    }
+
+}
+

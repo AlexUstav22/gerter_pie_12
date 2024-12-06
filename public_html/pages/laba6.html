@@ -7,8 +7,8 @@
     <title>Laboratory work</title>
     <link rel="icon" href="../assets/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/laba6.css">
     <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/laba2.js"></script>
 </head>
 <body>
     <header>
@@ -37,25 +37,26 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="container2">
-                <h2 class='result'>Задание 1. Даны стороны прямоугольника a и b. Найти его площадь S = a·b и периметр P = 2·(a + b).</h2>
-                <button class="but" onclick="values();">Решить 1 задачу</button>
-                <input type="text" id="a" name="side_a" placeholder="Введите сторону A">>
-                <input type="text" id="b" name="side_b" placeholder="Введите сторону B">
-                <div class='result' id="result"></div>
+        <div class = "logo_API">
+            <div class="search_menu">
+                <input type="text" id="search_input" placeholder="Введите запрос" />
+                <button type="button" id="search_button">Поиск</button>
             </div>
-            <div class="container2">
-                <h2 class='result'>Задание 2. Дан размер файла в байтах. Используя операцию деления нацело, найти количество полных килобайтов, которые занимает данный файл (1 килобайт = 1024 байта).</h2>
-                <button class="but" onclick="kilobytes();">Решить 2 задачу</button>
-                <input type="text" id="byte" name="bytes" placeholder="Введите количество байт">
-                <div class='result' id="result1"></div>
+            <div id="result">
+                <p id="total_items"></p>
+                <p id="count_element"></p>
+            </div>
+        </div>
+        
+        <div class="product_field">
+            <div class="list_of_products" id="product">
             </div>
         </div>
     </main>
     <footer>
-        <p>Все права защищены</p>
+        <p> Все права защищены</p>
     </footer>
+    <script src="../assets/js/dummy_json.js"></script>
 </body>
 
 </html>
